@@ -1,0 +1,699 @@
+::StoryTitle
+The Legend of StarCraft
+
+::StoryCSS [stylesheet]
+tw-passage img.centre {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+::StoryJS [script]
+var audio = document.createElement('audio');
+audio.src = 'bgm/bgm.opus';
+audio.loop = true;
+audio.play();
+
+
+::Introduction <81,28>
+<img class="centre" src="images/title.jpg">
+You are the general of the battlion of infantry terran unit.You are the cream of the crop, best known strategist in the terran colony, on theory though- as not many have known that you lack real combat experience.
+[[Continue->Introduction2]]
+
+
+::Introduction2 <82,160>
+<img class="centre" src="images/Mick1.png">
+Your company has been dropped into Sector Delta Q to establish base defences and secure objectives.
+Sergent Major Mick: Sir, great to have you here. Blah blah.
+Cut the crap and [[Give me a sit-rep->Sit Rep]]
+
+::Sit Rep <82,282>
+<img class="centre" src="images/Mick1.png">
+Sergent Major Mick: We are low on troops and there is an impending zerg wave coming in a couple of minutes. What should we do?
+
+Sergent Major Mick: We do have Jim Rayor the legendary marine within our ranks, but you know he can be quite a renegade and he has had some controversial military exploits in the past.
+
+Jim looks over at you, for a moment you stand frozen in his stare.
+
+[[...->Shake his hand]]
+
+::Shake his hand <78,399>
+<img class="centre" src="images/raynor01.png">
+You quickly regain your composure. Mustered your courage and approach Raynor.
+
+You: So LIEUTENANT Jim Raynor, I've heard about your military achievements and credientials, but let me make this clear, as long as I'm in command you better listen to my orders or else we will deal with you accordingly.
+
+Jim Raynor: Sure SIR. Word of advice, you want to survive this shit hole, you better stick close to me and ditch your military bull crap training that you guys preach at higher command.
+
+You look flustered, but you manage to maintain your stern compusure.
+
+[[Continue->Sergent Major Mick]]
+
+::Sergent Major Mick <212,397>
+<img class="centre" src="images/Mick1.png">
+Sergent Major Mick: So Sir, orders?
+
+Sergent Major Mick: We currently have our Service drones working on the minerals, our barracks are working but we still need additional minerals to churn out more marines. You know, money still works wonders in the battlefield. No money, No Muscle.
+
+Jim Raynor: Pssh! Our frontlines are wide open, you should seal it up with  a bunker and put our men in there to defend the wave. Thats the only solution we've got.
+
+[[Mine more Minerals->Minerals]]
+[[Build bunker->Bunker]]
+
+
+::Minerals <348,511>
+<img class="centre" src="images/SCV01.png">
+You: Build more SCVS to mine more minerals. We need a stronger economy to pull through this battle.
+
+You: No offense Jim, you lack the bigger picture. As a strategist, we need to think far. This aint the wild west that you can go in guns blazing. Economy is the new game.
+
+//Jim Raynor will remember this//
+
+The SCVS scurry to mine up and a batch of fresh marines are produced from the barracks.
+
+Sergent Major Mick: Anytime soon now, our scouts report that the zerg wave is just around the corner.
+
+[[Continue->Zerg Wave]]
+<audio src="sfx/tscyes03.wav" autoplay>
+
+
+::Bunker <348,275>
+<img class="centre" src="images/bunker.png">
+You: Build a bunker at the choke point. All SCVs to work on it Pronto! All units, ready and load up.
+
+Jim Raynor looks at you with an approving look.
+
+Sergant Major Mick: Our scouts report that the zerg wave is around the corner, all men defensive positions!
+
+[[Continue->Zerg Wave2]]
+<audio src="sfx/tscyes03.wav" autoplay>
+
+
+::Zerg Wave <484,509>
+<img class="centre" src="images/zergling.png">
+The zergs approach. You swear your balls tingled in fear. Your marines stay in open ground, stunned with the shear numbers of zergling approaching the base.
+
+Jim Raynor: Bunch of idiots,  scramble around the command center and TURTLE up!
+
+Raynor mustered the troops together, united they formed a circle around the command center and stutter stepped clockwise around the building.
+
+[[Micro your men!->Stutterstep]]
+
+::Zerg Wave2 <489,273>
+<img class="centre" src="images/zergling.png">
+You quietly sneak into a bunker and Turtled like a PuSS in a corner, worried that you might be caught by the zerglings in the open.
+
+The zerg wave approached and converged to the choke point, just as Raynor predicted.
+
+The men fired and the zerglings fell down into a pile.
+
+After the frenzy, the marines came out, with zero casaulties.
+
+The only hurt that was inflicted was your pride when Jim Raynor got it right.
+
+
+[[Continue->Regroup]]
+
+::Stutterstep <350,645>
+<img class="centre" src="images/marine2.png">
+//micro//
+//Stutter// FIRE // Stutter // FIRE
+
+no matter how well you micro-ed, the zerglings seem to get the better of your troops and you watch them fall one by one.
+
+Jim Raynor: Back to Back and keep moving!
+
+Raynor scrambled the troops and with his overpowering LEADERSHIP, managed to drive back the zerg swarm away... at least for now.
+
+You catch your breath[[Continue->Men are dispensable]]
+
+::Men are dispensable <483,646>
+<img class="centre" src="images/raynor02.png">
+As the last zerglings disappeared. Raynor turned towards you.
+
+Jim Raynor: DAMN you! You cost the lives of so many of our marines. You piece of crap!
+
+You assess your surroundings. Man, that was a blood bath.
+
+You: As I told you, you think like a grunt. Look at our economy, our mineral supply line was left untouched. Now we can improve our tech and overcome our enemy. ''Men are Dispensable, Lieutenant...''
+
+Jim Raynor clenched his fists in angry.
+
+[[Continue->Regroup]]
+
+::Regroup <633,392>
+<img class="centre" src="images/Mick1.png">
+You now have a healthy mineral economy, tech options open up for you and your troops.
+
+You look to Sgt Major Mick and Raynor for consult.
+
+Sgt Major Mick: Sir, to be frank, our troops wont last long in the battlefield if we dont get them patched up, maybe we can use our resources to get some medics to heal them up?
+
+Jim Raynor: Good call, I second that Sgt.
+
+You: What about Siege Tanks? The guys with the biggest GUNS win the war, not men.
+
+You ponder...
+
+[[Train Medivacs->Medivacs]]
+[[Train Siege Tanks->Siege Tanks]]
+
+::Medivacs <757,268>
+<img class="centre" src="images/medic.png">
+Kinda makes good sense to deploy Medis into the battlefield to improve the survivability.
+
+And besides, having some FEMALE company for the grunts might boost morale for them, considering most of them dont last too long in the battlefield.
+
+You give the command for the Medivacs to be queued up and produced.
+
+As you took your time for a breather, you see Sgt Major Mick rush up to you suddenly. He seemed worried.
+
+Sgt Major Mick: Sorry to bother, but there is an urgent call from High Command.
+
+[[Patch me Through->HighCommand]]
+
+::Siege Tanks <756,514>
+<img class="centre" src="images/siege tank.png">
+Medivacs? Pshh, thats such a PuSS strat. In combat school, the guys with the biggest Guns win the battle, you thought silently.
+
+You order the siege tanks to be queued up for production.
+
+In the background, you notice Raynor shaking his head in disapproval.
+
+As you wait, you see Sgt Major Mick rush up to you hurriedly.
+
+Sgt Major Mick: Urgent call from High Command!
+
+[[Patch Me Through->HighCommand]]
+
+::HighCommand <886,397>
+<img class="centre" src="images/high command.png">
+High Command: General, we receive intel that there is an infested hive colony 30 clicks from your current location. We need your battalion to secure that location and destroy that outpost.
+
+YOU: Roger that, I'll do it swiftly.
+
+High Command: We know you will, you never disappoint General.
+
+**End of Transmission**
+
+As you sieved through your thoughts...
+
+Sgt Major Mick: So whats the latest direction from High Command?, he interrupted.
+
+You paused, and an unsurmountable rage consumed you.
+
+YOU: Repeat what you said, Sergent!?
+
+Sgt Major Mick look puzzled. Sgt Major Mick: Whats the latest direction from High Command??
+
+[[Continue->Insurbodination]]
+
+::Insurbodination <1007,397>
+<img class="centre" src="images/Mick1.png">
+YOU: You bloodly hell address me as **SIR**, soldier! I'll very well charge you for insurbodination you maggot!
+
+Sgt Major Mick: What the fuck! Stop screwing around here, there is a WAR going on and all you care about is some useless chain of command formalities. Get your priorities right, **SIR**!
+
+You snapped, unable to control your temper.
+
+[[Send Mick to the firing squad->FiringSquad]]
+[[Forgive Mick and move on?->ForgiveMick]]
+
+::FiringSquad <1144,271>
+<img class="centre" src="images/marine2.png">
+YOU: Men send this maggot to the firing squad. Get him out of my sight.
+
+Everyone froze, not daring to move an inch.
+
+You look stupid for a moment, as no one dared to follow your command.
+
+You reached down to your pistol and...
+
+**BANG**
+**BANG**
+**BANG**
+
+Mick fell to the ground with a heavy thud. You stepped over his limp body and spat on him.
+
+//Kinda felt good, almost like the Godfather movies you used to watch.//
+
+[[Continue->MoveOut]]
+
+::ForgiveMick <1146,512>
+<img class="centre" src="images/Mick1.png">
+You paused.
+
+You being to remember the yoga practice and teachings that you have gone through religiously every sunday. Calm, Tranquility, Balance...
+
+You take a deep breath. Exhale and approached Mick.
+
+YOU: You are right, my apologies soldier. Carry on!
+
+Sgt Major Mick: Aye **SIR**!
+
+Mick regained his composure and proceeded to muster the men for the upcoming assault.
+
+[[Continue->MoveOut]]
+
+::MoveOut <1271,401>
+An hour passed. Enough time for you to regain your strength, had your lunch and squeezed in a quick jerk in the showers.
+
+You come out refreshed and ready for the assault.
+
+[[Suit up in the power armour->GoWithMarines]]
+[[Load up the Siege Tank->GoWithSiege]]
+
+::GoWithMarines <1409,512>
+<img class="centre" src="images/marines1.png">
+You glanced over to the marines. They look disorganised and scared as shit. You thought maybe it will be a good time to go out with them, shoulder to shoulder into the battelfield.// kinda like William Wallace in Braveheart//
+
+You suit up, while trying to remember the training that you received during cadet school during your younger days.
+
+Jim Raynor: Good to see you joining the assault *SIR* he muttered.
+
+You look at Raynor and nodded in approval.
+
+Jim Raynor: Stay close to me, its going to be a hell-hole out there.
+
+You give the command and the marines start the march towards the zerg outpost.
+
+[[Continue->ZergOutpost]]
+
+::GoWithSiege <1406,280>
+<img class="centre" src="images/siege tank.png">
+You enter the siege tank. Man, that felt good. Air-conditioned with cushy cushioned seats- beats walking with the marines any time.
+
+Jim Raynor: Sir, just a word of advice. The terrain we are marching to is narrow and tight. Siege fire will be dangerous to our men. Please reconsider bringing the tanks out to the battlefield. Besides we need them here in the base to secure out location.
+
+You glanced over to Raynor, stared into his eyes blankly.
+
+//fuck that renegade//...//trying to make me stupid again//
+
+You give the command. YOU: MOVE OUT!
+
+The company of tanks and marines begin the march towards the zerg outpost.
+[[Continue->ZergOutpost]]
+
+::ZergOutpost <1549,397>
+<img class="centre" src="images/kerrigan voice.png">
+The battalion approached the outpost and set up fortified positions a 5 clicks away.
+
+Your scouts report back.
+
+Scouting SCV: SIR! there is an infested marine horde slowly massing in front of the base. It looks like they are preparing for an assault on our troops.
+
+Jim Raynor: Sir, word of caution, I've heard the infested marines are highly contagious and the infestation is possible to spread through the air. We should keep our distance and destroy them.
+
+YOU: You heard? Can you confirm? I mean are you a scientist? You questioned Jim.
+
+Jim Raynor: Aghhhhh. He gawked.
+
+You ponder your next move.
+
+//Let them through...Spare them//...
+//Let them through...Spare them//...a voice whispered in your head.
+
+You swore something was speaking to you in your mind, but didnt dare to sound out as you might seem like an idiot.
+
+[[Burn them all->BurnThem]]
+[[Spare the infested marines?->DetainThem]]
+
+::BurnThem <1686,511>
+<img class="centre" src="images/infested.png">
+YOU: Damn they look f-ugly! Burn them all!
+
+Jim Raynor nodded and commanded the troopers to activate their flamethrowers. The infested marines burnt and fell instantly.
+
+The battlefield was filled with a scent of burnt flesh.
+
+As the last of the infested marines fell, you proceed forward to inspect them.
+
+[[Move closer to inspect->InspectInfested]]
+
+::DetainThem <1685,286>
+<img class="centre" src="images/marine2.png">
+YOU: We would need to take these infested marines ALIVE and quarantine them for further study. Higher Command will be definitely appreciative if we do so. Men, Deploy the stun grenades and detain them!
+
+Jim Raynor: You are out of your mind SIR!
+
+A marines turned their weapons to stun mode and shocked the infested marines. They were immobalized instantly.
+
+As the clean up crew loaded the infested marines to the qurantine vehicle. You moved closer to inspect one of them.
+
+[[Move closer to inspect->InspectInfested]]
+
+::InspectInfested <1844,401>
+<img class="centre" src="images/infested.png">
+You approached cautiously.
+
+Somehow one of the infested marines caught your eye.
+
+This one infested marine stood out from the crowd, probably because the infestation was still in its infancy stage but....
+
+[[Move even closer to inspect->InspectInfestedAgain]]
+
+::InspectInfestedAgain <1968,400>
+<img class="centre" src="images/medic dead.png">
+Man, this one had some beautiful pair of Tits. Probably a medic who got caught in the battlefield.
+
+What a waste you thought.
+
+As you stood beside 'her' and groped on her beautiful mammaries...
+
+Suddenly, it awoke! and slashed wildly at you.
+
+//FUCK!!!! Fuck!//
+
+You jumped back and unloaded a magazine load of bullets into the infested medic.
+
+It fell down motionlessly.
+
+Man that was a close shave.
+
+However, even with your fast reflexes, the infested medic managed to inflict a skin-deep wound on your right arm.
+
+How bad could it be? you thought.
+
+[[Inform the Medics about your wound->InformMedics]]
+[[Keep Mum->KeepSilent]]
+
+::InformMedics <2110,300>
+<img class="centre" src="images/medic1.png">
+You hurry to the medic bay.
+
+YOU: I may have been compromised by those damn creatures. Any known cures for the infestation?
+
+Medics:  Maybe some painkillers?, they smiled weakly.
+
+You know you are fucked. Probably you wont have much time to live.
+
+You walk towards Jim Raynor.
+
+YOU: Lieutenant Raynor, I've a favor to ask you. I've been compromised by the infestation and this will be a one way ticket for me. I'll plan to rig up some C4s and kamikaze myself within the infested base. I need you to take over the battalion when my final mission is done.
+
+Jim Raynor: What!? How did you get infested when you are standing miles away from the battle? Fuck it nevermind. Sure I'll take care of the battalion when you are gone.
+
+He added...
+
+Jim Raynor: By the way, before this mission I've received a relic from our protoss friends. A Xel naga device which MAY have a chance to terminate the infestation. Its a one time use only so we may need to save it for the mission.
+
+Your eyes brighten up.  Perhaps it could be used on yourself?
+
+[[Continue->InvestigateInfested]]
+
+::KeepSilent <2105,500>
+<img class="centre" src="images/raynor01.png">
+You observe your wound. Nothing abnormal so far.
+
+You wrap up your hands with some bandages and moved towards your men for a sit-rep.
+
+Jim Raynor: All targets have been neutralised. We should break into teams and move forward into the infested coloney base to investigate the source.
+
+You nodded.
+
+Jim Raynor: By the way, before this mission I've received a relic from our protoss friends. A Xel Naga device which *MAY* have a chance to terminate the infestation. Its a one time use only so we may need to save it for the mission.
+
+You gave a thumbs up of approval.
+
+[[Continue->InvestigateInfested]]
+
+::InvestigateInfested <2263,402>
+<img class="centre" src="images/raynor02.png">
+The infantry broke into their individual squads and proceed cautiously into the infested hive nest.
+
+Needless to say, you followed Jim because you know you need his protection.
+
+As the square proceeded deeper into the hive. You begin to hear zerg noises, chanting almost in unison.
+
+Jim Raynor: Stick close squad. Their leader must be near.
+
+The squad took defensive position as Jim and you approach the source of the noise.
+
+[[Continue->QueenOfBlades]]
+
+::QueenOfBlades <2402,403>
+<img class="centre" src="images/kerrigan01.png">
+You peered over the rocks and in the middle of the clearing, you make out the silhouette of a woman with wings in the middle of the zerg army.
+
+Jim Raynor whispered: Thats Kerrigan, the Queen of Blades. She used to be one of us, but she has been infested has been using her psionic powers to control the zerg army. She is dangerous so we MUST approach in caution.
+
+You observe quietly as Kerrigan mustered her zerg army.
+
+Kerrigan: **Screech Screech Screech ** //zerg language//
+
+If the zerg forces are mobilised you know your troops will be over-run by them.
+
+You pause.
+
+Maybe nows the time to detonate the C4? Yolo and wipe out the zerg army?
+
+[[Activate the C4 and sacrifice yourself for your troops->SelfDetonate]]
+[[Try to negotiate with Kerrigan for your life->Negotiate]]
+
+::SelfDetonate <2535,501>
+You look towards Raynor. Deep down he sensed that you are going to do something impulsive yet pretty heroic.
+
+He pat you on your shoulder and salutes you.
+
+You smile and dashed foward into the zerg army.
+
+YOU: ARGGHHHHH!!! FUCK YEAHHHHH!, as you closed your eyes and pressed the trigger.
+
+You lose all sensations.
+
+Your mind blank as you feel yourself feeling lightless.
+
+//am I dead??//
+
+[[Continue->KerriganOffer2]]
+
+::Negotiate <2529,293>
+<img class="centre" src="images/kerrigan02.png">
+Disregarding Raynor's plead for you to stay put.You dash forward and expose yourself to Kerrigan.
+
+The zerg forces surround you and prepare to swarm you.
+
+You clear your throat, one wrong move and you are screwed.
+
+YOU: I'm General Takasa from the Terran Colony. I've C4s all rigged up around the hive and can detonate it if you do the wrong move.
+
+Kerrigan seemed unimpressed. She circles around you, observing you closely.
+
+Kerrigan: You are pretty brave to confront me like this. Hmmm and did I notice you are infected? I can sense your soul being slowly consumed by the zerg.
+
+You try to hide your fear.
+
+YOU: True, my days are numbered and I've nothing to lose so I wont hesitate to end it all with you.
+
+Kerrigan: or perhaps I can cure you? ditch your men and join my cause and I can make you my right hand man?
+
+YOU: youuuu cann cure me???? ,you shuttered.
+
+[[Continue->KerriganOffer]]
+
+::KerriganOffer <2695,292>
+<img class="centre" src="images/kerrigan02.png">
+Kerrigan: For sure, Yes. Only if you are willing to give up the terran cause and join mine.
+
+You readily nodded.
+
+Jim Raynor burst out of his cover and yelled: This is MADNESS! Dont do it SIR! There is no turning back.
+
+Kerrigan: And to prove your worthiness, I want you to kill Jim as a proof that you are committed to the zerg cause.
+
+[[Continue->KillRaynor2]]
+
+::KerriganOffer2 <2703,499>
+<img class="centre" src="images/kerrigan02.png">
+As you regain your bearings, you open your eyes and notice that you are surrounded by a force-field enveloping you.
+
+Kerrigan stands over you and smirked.
+
+Kerrigan: You think your human weapons can hurt me? I AM THE QUEEN OF BLADES! I'm invincible...muahahaha.
+
+From the corner of your eye, you notice Raynor inching forward. In his hand, holding onto the Xel-Naga Device.
+
+Jim Raynor: Kerrigan I know you are in there. I know there is hope. Let us help you with this device. Please...
+
+You notice Kerrigan's confusion as Raynor steps closer to her.
+
+At the back of your mind, You remember that the Xel-Naga device is valid for a one time usage..
+
+[[Kill Raynor and snatch the Xel Naga Device->KILLRAYNOR]]
+[[Let Raynor pass and use the Xel Naga Device->LETRAYNORPASS]]
+
+::KILLRAYNOR <2864,571>
+<img class="centre" src="images/raynor02.png">
+You dash forward and 'Speared' Raynor to the ground.
+
+Both of you scrambled for your weapons, but with your quick reflexes, you took down Raynor and claimed the Xel-Naga device.
+
+[[Use the Xel Naga device on yourself->XELNAGASELF]]
+[[Use the Xel Naga device on Kerrigan->XELNAGAKERRIGAN]]
+
+::LETRAYNORPASS <2862,433>
+<img class="centre" src="images/raynor02.png">
+Raynor passes you and looks at you worriedly.
+
+He has noticed your arms has transformed into a mangled grotesque form.
+
+Jim Raynor carefully activates the Xel-Naga device with some strange incantations and a bright blue light envelopes Kerrigan.
+
+You watched as Kerrigan transforms into her beutiful self.
+
+Raynor steps forward and embraces her, running his thick muscular hands over her sexy body.
+
+You watched helplessly as Raynor and Kerrigan made out in front of you.
+
+//fuck, that guy should have been me//
+
+[[Continue->Ending3]]
+
+::XELNAGASELF <3049,537>
+<img class="centre" src="images/kerrigan02.png">
+You think for a moment as you are unsure how to activate the xel naga device.
+
+Perhaps I should drive it through my forehead? //think I've seen it somewhere before//
+
+After much contemplation, you deduced that is the most logical solution and proceeded to drive the xel naga shard into your forehead.
+
+The pain was excruciating as you trembled and broke down into shock.
+
+Kerrigan was stunned by your actions
+
+Kerrigan: What was that!? I mean thanks for not using it on me but why do that to yourself!? Regardless, thanks for sparing me. OK... thanks Bye.
+
+Kerrigan takes off with her zerg forces.
+
+Unable to withstand the pain anymore, You black out...
+
+[[Continue->Ending1]]
+
+::XELNAGAKERRIGAN <3048,666>
+You approach Kerrigan with the Xel Naga device.
+
+You are unsure how to activate the Xel Naga device as protoss tech looks alien to you.
+
+In the midst of your thoughts, you fumble and the Xel Naga device falls out of your hands....
+
+and smashes in front of Kerrigan.
+[[Continue->XELNAGAKERRIGAN2]]
+
+::Ending1 <3201,538>
+<img class="centre" src="images/medic.png">
+As you regain your senses, you notice you are back in the medic bay.
+
+You feel human and as you glanced at your hands the infested wound is gone, but...
+
+a ghastly scar remains on your forehead as a living memory of the traumatic event that ensued.
+
+Medic: SIR! great to have you back. We thought we lost you for a moment.
+Thank god for your bravery, you saved the colony and the zerg forces have retreated to their homeworld. High Command will be contacting you shortly.
+
+You lay back onto the bed and recollect the events over the past two days. You close your eyes and rest.
+
+[[Continue->Ending1b]]
+
+::Ending1b <3345,540>
+Weeks pass....
+
+Jim Raynor was convicted of the crimes for conspiring with Kerrigan and branded as a traitor of the terran colony.
+
+You are revered as a war hero, the self-sacrificing General that drove back Kerrigan and saved the human race.
+
+Well done!// Coughhhh// *HERO*
+[[Restart->Introduction]]
+
+::XELNAGAKERRIGAN2 <3198,667>
+<img class="centre" src="images/kerrigan03.png">
+A wave of energy spills out and engulfs Kerrigan.
+
+You watch as the blue energy overcomes the infestation and watch as Kerrigan assumes human form.
+
+You stand still, as you are mesmerized by Kerrigan's beauty.
+
+Kerrigan: What..What happend to me!? she mumbled softly.
+
+You dashed forward and let her rest on your shoulders.
+
+YOU: Its alright Kerrigan, I'm General Takasa, you are in safe hands now. Our men will be coming over shortly to evacuate us.
+
+You smiled at Kerrigan, at the back of your mind, thinking how to score with her later when you get back to base.
+
+Kerrigan: Thank you again for saving me, but what happend to JIM?
+
+You re-tell the past events to Kerrigan and that JIM Raynor was unfortunately swarmed by zerglings.
+
+[[Continue->Ending2]]
+
+::Ending2 <3348,666>
+As you finish your story, a squad of marines enter the clearing and approach you both.
+
+Marine: Sir! I need you to leave the lady alone and back away now. Slowly, or else deadly force will be used.
+
+YOU: What the fuck for? you bellowed.
+
+You look at your arms and see it slowly transforming into a grotesque form.
+
+Marine: Sir! you are compromised. According to protocol, we cannot bring you back, I'm sorry Sir!
+
+YOU are enraged and dash forward to snatch the weapon away from the marine. However, your quick reflexes were not fast enough and the Marines emptied their magazines onto you.
+
+YOU lie motionlessly as you watch kerrigan being taken away to safety.
+
+YOU die and are forgotten in history.
+
+// So much for being a hero //
+[[Restart->Introduction]]
+
+::Ending3 <3043,399>
+The infestation accelerates as you transform fully into a infested terran.
+
+You lose gradually sense of all cognitive functions....
+
+As you watch helplessly, the rescue squad of marines arrive and regroup with Jim Raynor and Kerrigan.
+
+You feel a sense of deep regret as you felt you should have been the hero of the story.
+
+The Marines empty their clip onto you and blow you to bits.
+
+Back home,
+
+Jim Raynor is reverred as a war hero, he got the girl and the promotion.
+
+You on the other hand are forgotten in history. //loser//
+
+**END**
+[[Restart->Introduction]]
+
+::KillRaynor2 <2858,246>
+<img class="centre" src="images/raynor02.png">
+You cower in fear as you begin to see the effects of the infestion take over you.
+
+Your arms start to turn into a grotesque lump of flesh.
+
+Without hesitation, you reach for your pistol and fired at Jim Raynor.
+
+**BANG**
+**BANG**
+**BANG**
+
+Jim Raynor, the legendary marine, fell to the ground.
+
+Kerrigan approaches you. Your eyes lock...and she kisses you.
+
+[[Continue->Ending4]]
+
+::Ending4 <3039,245>
+The infestation accelerates and you turn fully into an infested marine.
+
+Kerrigan: Now you are ONE with the SWARM!!!
+
+This is the end of your tale - least you got the girl right?
+[[Restart->Introduction]]
+
+::Twee2Settings [twee2]
+@story_start_name = 'Introduction'
+
+Twee2::build_config.story_format = 'Harlowe2'
+Twee2::build_config.story_ifid = '4B58480A-262E-4B1C-98CC-A81573379801'
